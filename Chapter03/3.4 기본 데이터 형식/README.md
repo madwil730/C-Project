@@ -1,6 +1,6 @@
 # 기본 데이터 형식
 ###숫자 데이터 형식  
-정수 계열 : byte, sbyte,short,int, long, char 
+정수 계열 : byte, sbyte,short,int, long, char  
 c#에선 2진수,16진수 표현하기 위한 접두사를 제공한다   
 예시)
 2진수 표현 :0b(2진수)  
