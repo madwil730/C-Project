@@ -13,25 +13,11 @@ public class NullableTest : MonoBehaviour
         Debug.Log(num.HasValue);
         Debug.Log(num != null);
 
-
         num = 3;
-
 
         Debug.Log(num.HasValue);
         Debug.Log(num != null);
         Debug.Log(num.Value);
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
 
-public class test
-{
-
-}
