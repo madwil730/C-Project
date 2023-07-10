@@ -43,11 +43,5 @@ public class StringSearch : MonoBehaviour
 
         Debug.Log($"{num} is number");
 
-
-
-
-
     }
-
-
 }
