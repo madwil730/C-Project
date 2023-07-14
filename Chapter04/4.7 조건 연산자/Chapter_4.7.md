@@ -1,16 +1,14 @@
-# 4-6 논리 연산자
-참과 거짓으로 이루어진 피연산의 연산을 말한다 
+# 4-7 조건 연산자
+조건 연산자(?) 는 피연산자가 세게를 사용 한다  
+표현식) 조건식 ? 참일 때의 값 : 거짓일 때의 값
 
-![캡처](https://github.com/madwil730/C-Project/assets/65881884/6de580ef-1ce7-4cce-a4e8-879ee33d3d80)
+
 
 ```
 사용 예
 int a = 3;
-int b = 4;
-bool c = a < b && b < 5 // true
-bool d = a > b && b < 5 // false
-bool e = a > b || b < 5 // true
-bool f = !e // false
+string result = a == 30 ? true : false // true
+string result = (10 % 2) == 0 ? "짝수" : "홀수" // 짝수
 
 ```
 
