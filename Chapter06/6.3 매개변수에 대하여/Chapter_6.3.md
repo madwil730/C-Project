@@ -6,9 +6,11 @@
 
 ```
 사용 예)
-int Plus(int a, int b)
+void Swap(int a, int b)
 {
-  return a+b;
+    int temp = b;
+		b = a;
+		a = temp;
 }
 
 
@@ -16,11 +18,13 @@ Start()
 {
   int x = 3;
   int y = 4;
-  int result = Plus(x,y);
+ 	Debug.Log(x); //3 
+  Debug.Log(y); //4
+
+  Swap(x, y);
 
   Debug.Log(x); //3 
   Debug.Log(y); //4  , x와 y는 값의 의한 전달이기때문에 값이 변하지 않는다
-  Debug.Log(result); // 7 
 }
 ```
 
