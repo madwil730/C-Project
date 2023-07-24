@@ -9,8 +9,8 @@
 void Swap(int a, int b)
 {
     int temp = b;
-		b = a;
-		a = temp;
+    b = a;
+    a = temp;
 }
 
 
@@ -18,7 +18,7 @@ Start()
 {
   int x = 3;
   int y = 4;
- 	Debug.Log(x); //3 
+  Debug.Log(x); //3 
   Debug.Log(y); //4
 
   Swap(x, y);
