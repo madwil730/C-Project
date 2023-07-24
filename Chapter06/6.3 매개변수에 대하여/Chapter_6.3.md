@@ -18,9 +18,9 @@ Start()
   int y = 4;
   int result = Plus(x,y);
 
-  Debug.log(x); //3 
-  Debug.log(y); //4  , x와 y는 값의 의한 전달이기때문에 값이 변하지 않는다
-  Debug.log(result); // 7 
+  Debug.Log(x); //3 
+  Debug.Log(y); //4  , x와 y는 값의 의한 전달이기때문에 값이 변하지 않는다
+  Debug.Log(result); // 7 
 }
 ```
 
