@@ -1,30 +1,29 @@
-# 6-2 return
-* 점프문의 한 종류로 프로그램의 흐름을 호출자에게 돌려놓는다
+# 6-3 매개변수에 대하여
+* 메개변수는 메소드 외부로부터 메소드 내부로 데이터를 전달받는 매개체 역활을 한다
+* 전달을 받는 변수이기에 매개변수의 값을 바꾸도 전달한 외부 변수의 값이 바뀌지 않는다
+* 메소드를 호출할때 데이터를 복사해서 매개변수에 넘기는 것을 "값에 의한 전달" 이라고 한다
+  
 
 ```
 사용 예)
-int returnTest(int n)
+int Plus(int a, int b)
 {
-  if(n < 2)
-     return n; // n이 2보다 작은면 n을 돌려줌
-  else
-     return n+2; // n이 2보다 크면 n+2 을 돌려줌
+  return a+b;
+}
 
+
+Start()
+{
+  int x = 3;
+  int y = 4;
+  int result = Plus(x,y);
+
+  Debug.log(x); //3 
+  Debug.log(y); //4  , x와 y는 값의 의한 전달이기때문에 값이 변하지 않는다
+  Debug.log(result); // 7 
 }
 ```
 
-```
-사용 예)
-void returnTest(int n)
-{
-  if(n == 2)
-     Debug.log("n은 2이다")
-     return; // 반환형식이 void 여서 return을 쓰면 아무 결과도 반환하지 않는다
-  else
-      Debug.log("n은 2가 아닌다")
-
-}
-```
 
 
 
