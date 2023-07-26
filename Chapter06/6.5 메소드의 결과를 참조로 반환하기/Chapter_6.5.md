@@ -5,7 +5,7 @@
 ```
 사용예)
 
-int SomeValue= 10;
+int SomeValue = 10;
 
 public ref int SoMehod()
 {
