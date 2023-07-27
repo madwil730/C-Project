@@ -6,9 +6,16 @@
 * 메소드 호출시 초기화하지 않은 지역 변수를 메소드의 out 매개변수로 넘길 수 있다
   
 
+```
+사용예)
 
+public  void SoMehod(out int a)
+{
+  a = 0;
+  return a;
+}
 
-
+```
 
 
 
