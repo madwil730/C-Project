@@ -7,7 +7,7 @@
 
 int SomeValue = 10;
 
-public ref int SoMehod()
+public ref int SomeMehod()
 {
   return ref SomeValue;
 }
