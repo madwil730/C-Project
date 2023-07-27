@@ -9,7 +9,7 @@
 ```
 사용예)
 
-public  void SoMehod(out int a)
+public  void SomeMehod(out int a)
 {
   a = 0;
   return a;
