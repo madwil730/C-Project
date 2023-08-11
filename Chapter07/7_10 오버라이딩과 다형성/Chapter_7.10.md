@@ -1,43 +1,6 @@
-# 7-9 기반 클래스와 파생 클래스 사이의 형식 변환, 그리고 is 와 as
+# 7-10 오버라이딩과 다형성
 
-* 자식 클래스의 인스턴스는 부모 클래스의 인스턴스로 사용할 수 있다
-```
-형변환 예시)
-Class Mammal
-{
-  public void Nurse()
-  {
-     //Nurse 메소드 설명
-  }
-}
-
-Class Dog : Mammal
-{
-  public void Bark()
-  {
-     //Bark 메소드 설명
-  }
-}
-
-Start()
-{
-   Mammal mammal = new Mammal();
-   mammal.Nurse();
-
-   mammal = new Dog();
-   mammal.Nuse();
-
-  Dog dog =(Dog)mammal;
-  dog.Nurse()
-  dog.Bark();
-}
-```
-
-### is
-* 객체가 해당 형식에 해당하는지 검사하여 그 결과를 bool 값으로 반환한다
-  
-### as
-* 형식 변환 연산자의 역활을 하며 형식 변환에 실패하면 객체 잠조를 null로 만든다
-  
-
+* 다형성: 객체가 여려 형태를 가질 수 있는것을 뜻한다
+* 오버라이딩: 부모 클래스가 정의한 매서드를 재정의하는 것,단 메서드는 virtual 키워드로 한정되어 있어야 한다
+* 오버라이딩한 메서드는 override 라는 키워드로 한정해줘야 한다
 
