@@ -1,6 +1,34 @@
-# 7-10 오버라이딩과 다형성
+# 7-11 메소드 숨기기
 
-* 다형성: 객체가 여려 형태를 가질 수 있는것을 뜻한다
-* 오버라이딩: 부모 클래스가 정의한 매서드를 재정의하는 것,단 메서드는 virtual 키워드로 한정되어 있어야 한다
-* 오버라이딩한 메서드는 override 라는 키워드로 한정해줘야 한다
+* 부모 클래스에서 구현된 버전의 메소드를 감추고 자식 클래스에서 구현된 버전만 보여주는 것
+* 자식 클래스 버전읜 메소드를 new 한정자로 수식할 수 있다(생성자를 호출할 때 사용하는 new 연산자와는 다른 한정자인다)
+* 메소드 숨기기는 오버라이딩과 달라서 객체의 다형성을 표현하지 못한다
+```
+사용 예)
+Class Base
+{
+  public void MyMethod()
+  {
+     Debug.Log("Base.MyMethod()");
+  }
+}
 
+Class Derived : Base
+{
+  public new void MyMethod() // Base.MyMethod()를 감추고 Derived 클래스에서 구현된 MyMethod()만 노출
+  {
+     Debug.Log("Derived.MyMethod()");
+  }
+}
+
+Start()
+{
+   Derived derived = new Derived();
+   derived.MyMethod(); //derived.MyMethod() 출력
+
+   Base baseOrDerived = new Derived();
+   baseOrDerived.MyMethod(); //Base.MyMethod() 출력
+
+}
+
+```
