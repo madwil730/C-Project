@@ -1,20 +1,14 @@
-# 7-14 중첩 클래스
-* 클래스 안에 선언된 클래스를 뜻한다
-* 자신이 소속된 클래스의 멤버에 자유롭게 접근 가능하다(해당 멤버가 private여도 접근이 가능하다)
+# 7-15 분할 클래스
+* 여러 번에 나눠서 구현하는 클래스
+* 클래스의 구현이 길어질 경우 여러 파일에 나눠서 구현할 수 있다
+* partical 키워드를 이용하여 작성
 ```
-사용 예)
-Class OuterClass
+partial class MyVlass
 {
-  private int OuterMember; 
-
-  Class MestedClass
-  {
-      public void DoSomeThing()
-      {
-         OuterClass outer = new OuterClass();
-         outer.OuterMember = 10; 
-      }
-  }
+   //...
 }
-
+partial class MyVlass
+{
+   //...
+}
 ```
