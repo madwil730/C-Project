@@ -1,16 +1,16 @@
-# 7-16 확장 메소드
-* 기존 클래스의 기능을 확장하는 기법
-* static 한정자로 수식해야 하며 첫 번째 매개변수는 반드시 this키워드를 쓴다
-* this키워드 다음에 오는 매개변수 목록이 실제로 확장메소드를 호출 할때 입력되는 매개변수이다
+# 7-17 구조체
+* 값 형식 이며 필드와 메소드를 가질 수 있다, struct 키워드를 이용해서 선언한다
+* 구조체는 값 형식이기에 인스턴스는 스택에 할당되고 인스턴스가 선언된 블록이 끝나는 지점의 메모리에서 사라진다
+* readOnly 키워드를 사용하여 값을 읽을 수 만 있는 struct를 만들 수 있다
 ```
-확장 매개변수 사용 예)
+구조체  예)
 
-partial static class MyClass
+struct MyStruct
 {
-   public static int Method(this int MyInt, int exponent)
-   {
-   //...
-   }
+   //필드
+   // 메소드
 }
 
 ```
+### 클래스 와 구조체 차이 표
+![캡처](https://github.com/madwil730/C-Project/assets/65881884/15c477ba-10af-410d-8ef0-4217a8e8b35b)
