@@ -7,7 +7,7 @@
 ```
 사용 예
 int a = 3;
-string result = a == 30 ? true : false // true
+bool result = a == 30 ? true : false // false
 string result = (10 % 2) == 0 ? "짝수" : "홀수" // 짝수
 
 ```
