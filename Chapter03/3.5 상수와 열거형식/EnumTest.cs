@@ -8,11 +8,11 @@ public class EnumTest : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-        Debug.Log((int)enumTest.a);
-        Debug.Log((int)enumTest.b);
-        Debug.Log((int)enumTest.c);
-        Debug.Log((int)enumTest.d);
-        Debug.Log((int)enumTest.e);
+        Debug.Log((int)enumTest.a); // 10
+        Debug.Log((int)enumTest.b); // 11
+        Debug.Log((int)enumTest.c); // 12
+        Debug.Log((int)enumTest.d); // 50
+        Debug.Log((int)enumTest.e); // 51
     }
 
     
