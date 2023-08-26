@@ -11,13 +11,14 @@ public static class IntergerExtension
         return myInt * myInt;
     }
 
-	public static int Power(this int myInt, int exponent)
-	{
+    public static int Power(this int myInt, int exponent)
+    {
         int result = myInt;
         for(int i =1; i <exponent; i++)
-            result *= myInt; 
-		return result;
-	}
+        result *= myInt; 
+	    
+	return result;
+    }
 
 }
 
