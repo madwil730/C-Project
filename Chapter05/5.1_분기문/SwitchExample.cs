@@ -8,31 +8,31 @@ public class SwitchExample : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string day = "È­";
+        string day = "í™”";
 
         switch(day)
         {
-            case "ÀÏ":
-                Debug.Log("ÀÏ¿äÀÏ");
+            case "ì¼":
+                Debug.Log("ì¼ìš”ì¼");
                 break;
-			case "¿ù":
-				Debug.Log("¿ù¿äÀÏ");
-				break;
-			case "È­":
-				Debug.Log("È­¿äÀÏ");
-				break;
-			case "¼ö":
-				Debug.Log("¼ö¿äÀÏ");
-				break;
-			case "¸ñ":
-				Debug.Log("¸ñ¿äÀÏ");
-				break;
-			case "±İ":
-				Debug.Log("±İ¿äÀÏ");
-				break;
-			case "Åä":
-				Debug.Log("Åä¿äÀÏ");
-				break;
+	   case "ì›”":
+		Debug.Log("ì›”ìš”ì¼");
+		break;
+	   case "í™”":
+		Debug.Log("í™”ìš”ì¼");
+		break;
+	   case "ìˆ˜":
+		Debug.Log("ìˆ˜ìš”ì¼");
+		break;
+	   case "ëª©":
+		Debug.Log("ëª©ìš”ì¼");
+		break;
+	   case "ê¸ˆ":
+		Debug.Log("ê¸ˆìš”ì¼");
+		break;
+	   case "í† ":
+		Debug.Log("í† ìš”ì¼");
+		break;
 		
 		}
     }
