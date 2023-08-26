@@ -17,9 +17,8 @@ public class CopyTest
 		source.MyField1 = 10;
 		source.MyField2 = 20;
 
-		MyClass target = source;
-      // 얕은 복사가 일어남, target은 source의 힙에 있는 객체가 아닌 스택에 있는 참조를 복사하기 때문에
-      // source 와 target은 같은 메모리를 바라보게 됨
+		MyClass target = source; // 얕은 복사가 일어남, target은 source의 힙에 있는 객체가 아닌 스택에 있는 참조를 복사하기 때문에
+                                         // source 와 target은 같은 메모리를 바라보게 됨
 		target.MyField2 = 30;
 
 		Debug.LogFormat("{0},{1}", source.MyField1, source.MyField2); // 10 ,30 
