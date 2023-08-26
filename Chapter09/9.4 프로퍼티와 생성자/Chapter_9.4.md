@@ -1,12 +1,9 @@
-# 9.2 매소드보다 프로퍼티
-* 프로퍼티를 활용하여 메소드를 선언하지 않고 쉽게 private 변수에 접근할 수 있다
-* get 접근자는 필드로부터 값을 읽어오고 set 접근자는 필드에 값을 할당한다
+# 9.4 프로퍼티와 생성자
+* 객체 생성시 프로퍼티를 초기화 할 수 있다(원하는 프로퍼티만 골라서 초기화 할 수 있다)
 ```
 예시)
 Class MyClass
 {
-  private int myField;
-
   public int MyField
   {
     get
@@ -17,9 +14,30 @@ Class MyClass
     {
        myField  = value; // myField의 값을 세팅할 수 있다
     }
-
   }
 
+   public String MyField2
+  {
+    get
+    {
+       return MyField2; // myField 의 값을 가져올 수 있다
+    }
+    set
+    {
+       MyField2  = value; // myField의 값을 세팅할 수 있다
+    }
+  }
+}
+
+Class StartClass
+{
+  void Start()
+  {
+      MyClass myClass = new MyClass
+      {
+         MyField = 3;
+      }
+  }
 }
 
 
