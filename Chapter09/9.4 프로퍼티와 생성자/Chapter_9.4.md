@@ -8,11 +8,11 @@ Class MyClass
   {
     get
     {
-       return myField; // myField 의 값을 가져올 수 있다
+       return myField; 
     }
     set
     {
-       myField  = value; // myField의 값을 세팅할 수 있다
+       myField  = value; 
     }
   }
 
@@ -20,11 +20,11 @@ Class MyClass
   {
     get
     {
-       return MyField2; // myField 의 값을 가져올 수 있다
+       return MyField2; 
     }
     set
     {
-       MyField2  = value; // myField의 값을 세팅할 수 있다
+       MyField2  = value; 
     }
   }
 }
