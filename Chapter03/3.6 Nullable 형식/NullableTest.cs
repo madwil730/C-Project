@@ -10,14 +10,14 @@ public class NullableTest : MonoBehaviour
     {
 
         num = null;
-        Debug.Log(num.HasValue);
-        Debug.Log(num != null);
+        Debug.Log(num.HasValue); //false
+        Debug.Log(num != null); //false
 
         num = 3;
 
-        Debug.Log(num.HasValue);
-        Debug.Log(num != null);
-        Debug.Log(num.Value);
+        Debug.Log(num.HasValue); // true
+        Debug.Log(num != null);  //true
+        Debug.Log(num.Value);  //3
     }
 }
 
