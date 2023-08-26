@@ -15,7 +15,7 @@
 
 void Start()
 {
-    printProfile(phone: "010-2222-3333", name: "박찬호");
+    printProfile(phone: "010-2222-3333", name: "박찬호"); // name: 박찬호, phone: 010-2222-3333
 }
 
 ```
