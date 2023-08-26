@@ -7,6 +7,18 @@ Class MyClass
   public int MyField {get; init;}
 }
 
+Class StartClass
+{
+  void Start()
+  {
+      MyClass myClass = new MyClass
+      {
+         MyField = 10;
+      }
+
+      myClass.MyField = 15; // 컴파일 에러
+  }
+
 
 ```
 
