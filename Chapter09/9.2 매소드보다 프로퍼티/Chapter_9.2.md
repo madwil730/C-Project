@@ -1,12 +1,25 @@
-# 9-1 public 필드의 유혹
-* get/set 메소드를 활용하여 private 필드를 가진 값에도 접근을 할 수 있다ㅡ
+# 9.2 매소드보다 프로퍼티
+* 프로퍼티를 활용하여 메소드를 선언하지 않고 쉽게 private 변수에 접근할 수 있다
+* get 접근자는 필드로부터 값을 읽어오고 set 접근자는 필드에 값을 할당한다
 ```
 예시)
 Class MyClass
 {
-  private int MyField;
-  public int GetMyField() { return myFieldl; }
-  public void SetMyField {int Newvalue} {myField = new Value;}
+  private int myField;
+
+  public int MyField
+  {
+    get
+    {
+       return myField; // myField 의 값을 가져올 수 있다
+    }
+    set
+    {
+       myField  = value; // myField의 값을 세팅할 수 있다
+    }
+
+  }
+
 }
 
 
