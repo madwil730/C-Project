@@ -5,7 +5,7 @@
 예시)
 Class MyClass
 {
-  private int myField {get; set;} 
+  private int myField { get; set;} 
 }
 
 
