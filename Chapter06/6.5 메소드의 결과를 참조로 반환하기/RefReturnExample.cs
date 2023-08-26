@@ -14,7 +14,7 @@ class Product
 
     public void PrintPrice()
     {
-        Debug.Log($"°ª : {price}");
+        Debug.Log($"ê°’ : {price}");
     }
 }
 public class RefReturnExample : MonoBehaviour
@@ -27,13 +27,13 @@ public class RefReturnExample : MonoBehaviour
 
         product.PrintPrice(); //100
         Debug.Log($"Ref Local Price : {ref_local_price}"); //100
-		Debug.Log($"Normal Local Price : {normal_local_price}"); //100
+	Debug.Log($"Normal Local Price : {normal_local_price}"); //100
 
-		ref_local_price = 200;
+	ref_local_price = 200;
 
-		product.PrintPrice(); //200
-		Debug.Log($"Ref Local Price : {ref_local_price}"); //200
-		Debug.Log($"Normal Local Price : {normal_local_price}"); //100, refÅ°¿öµå¸¦ »ç¿ëÇÏÁö ¾ÊÀ¸´Ï °ªÀÌ ÂüÁ¶ µÇÁö ¾Ê°í º¹»çµÊ
+	product.PrintPrice(); //200
+	Debug.Log($"Ref Local Price : {ref_local_price}"); //200
+	Debug.Log($"Normal Local Price : {normal_local_price}"); //100, refí‚¤ì›Œë“œë¥¼ ì‚¬ìš©í•˜ì§€ ì•Šìœ¼ë‹ˆ ê°’ì´ ì°¸ì¡° ë˜ì§€ ì•Šê³  ë³µì‚¬ë¨
 
 
 	}
