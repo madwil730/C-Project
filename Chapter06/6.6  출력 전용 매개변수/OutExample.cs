@@ -7,8 +7,6 @@ public class OutExample : MonoBehaviour
 	{
 		int a = 20;
 		int b = 3;
-
-
 		Divide(a, b, out int c, out int d);
 
 		Debug.Log($"a: {a},b: {b},a/b: {c},a:%b {d}");
