@@ -31,7 +31,7 @@ class Foo
 }
 
 Foo foo = null;
-bar = f00?.member;
+bar = f00?.member; //null
 ```
 
 
