@@ -6,7 +6,7 @@
 사용 예)
 Class Base
 {
-  public virtualk void MyMethod()
+  public virtual void MyMethod()
   {
      //....
   }
