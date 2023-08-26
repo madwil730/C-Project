@@ -16,7 +16,7 @@ public class IsAsExample : MonoBehaviour
             dog.Bark();
         }
 
-		Mammal mammal2 = new Cat();
+	Mammal mammal2 = new Cat();
 
         Cat cat = mammal2 as Cat;
         if (cat != null)
