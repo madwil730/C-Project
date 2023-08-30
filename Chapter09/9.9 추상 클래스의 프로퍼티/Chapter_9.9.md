@@ -1,34 +1,32 @@
-# 9.6 레코드 형식으로 만드는 불변 객체
-* 불변 객체는 내부 데이터를 변경할 수 없는 객체를 뜻한다
-* 레코드는 값 형식처럼 다룰 수 있는 불변 참조 형식을 뜻한다
-* 레코드를 선언할때 record 키워드와 초기화 전용 자동 구현 프로퍼티를 구현해야 한다
-* with 키워드를 사용하여 복사 생성자를 작성할 수 있다
+# 9.9 추상 클래스의 프로퍼티
+* 추상클래스도 프로퍼티를 사용할 수 있으면 상속 받는 자식 클래스는 추상 프로퍼티를 상속받는다
+* 인터페이스와 다르게  구현된 프로퍼티와 구현되지 않은 프로퍼티를 가질수 있디
+* 추상 프로퍼티는 abstract 한정자를 이용해서 선언한다
 ```
-record 선언 예시)
-
-public record Transaction
+예시)
+abstract class Product
 {
-	public string From { get; init; }
-	public string To { get; init; }
+    public string SerialID
+    {
+        get { return "HI"; }
+    }
+
+    abstract public string ProductDate
+    {
+        get; set;
+    }
 }
 
-public class RecordExample : MonoBehaviour
+class Test : Productss
 {
-
-	void Start()
-	{
-		Transaction transaction = new Transaction()
-		{
-			From = "Alice",
-			To = "BoB"
-	
-		};
-
-		Transaction transaction2 = transaction with { To = "Tom" };
-		Debug.Log(transaction); // Transaction { From = Alice, To = BoB }
-		Debug.Log(transaction2); // Transaction { From = Alice, To = Tom }
-	}
+	public override string ProductDate
+    {
+        get;
+        set;
+    }
 }
+
+
 ```
 
 
