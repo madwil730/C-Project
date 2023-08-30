@@ -21,8 +21,7 @@ class Test : Productss
 {
 	public override string ProductDate
     {
-        get;
-        set;
+        get; set;
     }
 }
 
