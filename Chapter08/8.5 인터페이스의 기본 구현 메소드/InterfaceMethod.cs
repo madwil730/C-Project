@@ -29,10 +29,10 @@ public class InterfaceMethod : MonoBehaviour
         logger.Log("Hello");
         logger.LogError("Error");
 
-		ConsoleLogger2 Console = new ConsoleLogger2();
-		Console.Log("Hello");
-		//Console.LogError("Error"); // 컴파일 에러
-	}
+	ConsoleLogger2 Console = new ConsoleLogger2();
+	Console.Log("Hello");
+	//Console.LogError("Error"); // 컴파일 에러
+}
 
    
 }
