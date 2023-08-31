@@ -31,7 +31,7 @@ public class InterfaceMethod : MonoBehaviour
 
 		ConsoleLogger2 Console = new ConsoleLogger2();
 		Console.Log("Hello");
-		//Console.LogError("Error"); // ÄÄÆÄÀÏ ¿¡·¯
+		//Console.LogError("Error"); // ì»´íŒŒì¼ ì—ëŸ¬
 	}
 
    
