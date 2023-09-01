@@ -1,13 +1,14 @@
-# 9-1 public 필드의 유혹
-* get/set 메소드를 활용하여 private 필드를 가진 값에도 접근을 할 수 있다ㅡ
+# 10.2 배열을 초기화하는 방법 세 가지
+* 배열의 원소 개수를 명시하고, 그 뒤에 중괄호 {}로 블록 안애 초기화 할 데이터를 넣는다
 ```
-예시)
-Class MyClass
-{
-  private int MyField;
-  public int GetMyField() { return myFieldl; }
-  public void SetMyField {int Newvalue} {myField = new Value;}
-}
+초기화 방법 1)
+string[] array1 = new string[3] {"a","b","c"};
+
+초기화 방법 2)
+string[] array2 = new string[] {"a","b","c"}; // 배열릐 용량을 생략할 수 있다
+
+초기화 방법 3)
+string[] array3 = {"a","b","c"};
 
 
 ```
