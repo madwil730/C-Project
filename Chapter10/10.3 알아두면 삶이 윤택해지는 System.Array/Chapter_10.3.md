@@ -1,14 +1,23 @@
-# 9-1 public 필드의 유혹
-* get/set 메소드를 활용하여 private 필드를 가진 값에도 접근을 할 수 있다ㅡ
-```
-예시)
-Class MyClass
-{
-  private int MyField;
-  public int GetMyField() { return myFieldl; }
-  public void SetMyField {int Newvalue} {myField = new Value;}
-}
+# 10.3 알아두면 삶이 윤택해지는 System.Array
+* 배열은 System.Array 형식에서 파생되었다
+
+### Array 클래스의 주요 메소드 와 프로퍼티
+#### 정적 메소드
+* Sort(): 배열을 정렬
+* BinarySearch(): 이진 탐색을 수행
+* IndexOf() : 배열에서 찾고자 하는 특정 데이터의 인덱스를 반환
+* TrueForAll<T>() : 배열의 모든 요소가 지정한 조건에 부합하는지의 여부를 반환
+* FindeIndex<T>() : 배열에서 지정한 조건에 부합하는 첫 번째 요소의 인덱스를 반환 
+* Resize<T>() : 배열의 크기를 재조정
+* Clear() : 배열의 모든 요소를 초기화
+* ForEach<T>() : 배열의 모든 요소에 대해 동일한 작업을 수행
+* Copy() : 배열의 일부를 다른 배열에 복사
+#### 인스턴스 메소드
+* GetLength() :배열에서 지정한 차원의 길이를 반환
+#### 프로퍼티
+* Length : 배열의 길이를 반환
+* Rank : 배려열의 차원을 반환 
 
 
-```
+
 
