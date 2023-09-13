@@ -3,12 +3,20 @@
   
 ```
 일반화 예시)
+
+class Array_Generic<T>
 {
-   void CopyArray<T>(T[] source, T[] target)
-	{
-		for(int i = 0; i < source.Length; i++)
-			target[i] = source[i];	
-	}
+     private T[] array;
+
+     public T getElement(int index) { return array[index]; }	
+}
+
+private void Start()
+{
+     Array_Generic<int> intArr = new Array_Generic<int>();
+     Array_Generic<string> strArr = new Array_Generic<string>();
+}
+
 
 
 ```
