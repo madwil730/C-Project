@@ -1,4 +1,10 @@
-# 12.2 try~catch로 예외 받기
-* try catch 문을 통해 예외를 처리 할 수 있다
-* try 블록에서 실행할 코들 적고 catch 블록에서 try 블록에서 나온 예외를 처리한다
-* catch는 try 블록에서 던질 예외 객체와 형식이 일치해야 한다
+# 12.3 System.Exception 클래스
+* System.Exception 클래스는 모든 예외의 조상이다, C#에서 모든 예외 클래스는 반드시 이 클래스를 상속받아야 한다
+* System.Exception 형식의 예외를 받는 catch 절 하나로 모든 예외를 받을 수 있다
+
+```
+예시)
+
+
+
+```
