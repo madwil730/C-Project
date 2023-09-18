@@ -4,7 +4,13 @@
 
 ```
 예시)
-
-
+ try
+{
+    // ...
+}
+catch(Exception e)
+{
+    Debug.Log("예외 발생 : " + e.ToString()); 
+}
 
 ```
