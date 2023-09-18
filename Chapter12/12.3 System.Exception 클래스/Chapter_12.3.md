@@ -10,7 +10,7 @@
 }
 catch(Exception e)
 {
-    Debug.Log("예외 발생 : " + e.ToString()); 
+    Debug.Log("예외 발생 : " + e.ToString()); // 모든 예외를 받을 수 있다
 }
 
 ```
