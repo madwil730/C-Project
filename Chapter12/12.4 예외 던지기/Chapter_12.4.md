@@ -1,16 +1,29 @@
-# 12.3 System.Exception 클래스
-* System.Exception 클래스는 모든 예외의 조상이다, C#에서 모든 예외 클래스는 반드시 이 클래스를 상속받아야 한다
-* System.Exception 형식의 예외를 받는 catch 절 하나로 모든 예외를 받을 수 있다
+# 12.4 예외 던지기
+* throw 문을 통해 예외를 호출 할 수 있다
+
 
 ```
 예시)
- try
-{
-    // ...
-}
-catch(Exception e)
-{
-    Debug.Log("예외 발생 : " + e.ToString()); // 모든 예외를 받을 수 있다
-}
+
+    void Start()
+    {
+        try
+        {
+            Throw(13);
+        }
+        catch(Exception e)
+        {
+            Debug.LogException(e);  // 10 보다 크다
+        }
+    
+    }
+
+    public void Throw(int num)
+    {
+        if (num < 10)
+            Debug.Log("10 아래");
+        else
+            throw new Exception("10보다 크다");
+    }
 
 ```
