@@ -2,6 +2,7 @@
 * Exception 클래스를 상속해서 새로운 예외 클래스를 만들 수 있다
 
 ```
+예시)
 class InvaildArgumentException : Exception
 {
     public InvaildArgumentException()
