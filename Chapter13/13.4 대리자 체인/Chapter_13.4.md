@@ -1,2 +1,32 @@
-# 13.2 대리자는 왜, 그리고 언제 사용하나요
-* 대리자 는 함수 매개변수에 받게 만들 수 있어서 쉽게 여러가지 함수를 사용할 수 있다
+# 13.4 대리자 체인
+* 대리자는 여러개의 메소드를 동시에 참조할 수 있다
+* += ,-= 을 통해 메소드 여러개를 참조하거나 참조를 끊을 수 있다
+
+```
+예시)
+
+delegate void deleTest();
+
+void CallA()
+{
+   debug.log("Call A");
+}
+
+void CallB()
+{
+   debug.log("Call B");
+}
+
+
+void Start()
+{
+  deleTest test = new deleTest(CallA);
+  test += new deleTest(CallB);
+
+  test(); //Call A, Call B
+
+}
+
+
+
+```
