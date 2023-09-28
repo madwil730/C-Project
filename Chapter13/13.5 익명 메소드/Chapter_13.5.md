@@ -1,2 +1,22 @@
 # 13.5 익명 메소드
-* 대리자 는 함수 매개변수에 받게 만들 수 있어서 쉽게 여러가지 함수를 사용할 수 있다
+* 익명 메소드 : 이름이 없는 메소드를 뜻한다
+
+  
+  
+```
+예시)
+delegate int Calculate(int a, int b);
+
+	private void Start()
+	{
+		Calculate Calc;
+
+		Calc = delegate (int a, int b)  // 익명 메소드
+		{
+			return a + b;
+		};
+
+		Debug.Log(Calc(3, 4)); // 7 
+	
+	}
+```
