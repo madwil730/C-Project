@@ -1,22 +1,6 @@
-# 13.5 익명 메소드
-* 익명 메소드 : 이름이 없는 메소드를 뜻한다
+# 13.6 이벤트 객체에 일어난 사건 알리기
+* 이벤트 : 특정 활동이 있을때 호출자에게 알려주는 것, 대리자와 하는 역활이 비슷하다
+* 이벤트는 대리자를 event 한정자로 수식해서 선언한다
 
   
   
-```
-예시)
-delegate int Calculate(int a, int b);
-
-	private void Start()
-	{
-		Calculate Calc;
-
-		Calc = delegate (int a, int b)  // 익명 메소드
-		{
-			return a + b;
-		};
-
-		Debug.Log(Calc(3, 4)); // 7 
-	
-	}
-```
