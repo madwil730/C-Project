@@ -1,6 +1,28 @@
-# 13.6 이벤트 객체에 일어난 사건 알리기
-* 이벤트 : 특정 활동이 있을때 호출자에게 알려주는 것, 대리자와 하는 역활이 비슷하다
-* 이벤트는 대리자를 event 한정자로 수식해서 선언한다
+# 13.7 대리자와 이벤트
+* 이벤트가 선언되면 해당 변수를 외부에서 호출이 불가능하다
+* 대리자는 public, internal로 수식되면 외부에서 호출이 가능하다
 
+```
+예시)
+
+class MyNotifier
+{
+  public event EvnetHandler SomethingHappend;
+}
+
+class MainApp
+{
+
+  void Start()
+  {
+      MyNotifier notifer = new MyNotifier();
+      notifer.SomethingHappend("aaa"); // 이벤트로 선언되어 에러 발생
+
+  }
+
+}
+
+
+```
   
   
