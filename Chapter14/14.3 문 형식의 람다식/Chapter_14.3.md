@@ -1,15 +1,18 @@
-# 14.2 처음 만나는 람다식
-* 람다식은 익명 메소드를 만들기 위해 사용, 해당 메소드를 무명 함수라고 부른다
-* => 연산자를 통해 매개변수를 전달할 수 있다(=> 는 입력 연산자이다)
+# 14.3 문 형식의 람다식
+* => 연산자 뒤에 {}로 둘러쌓인 코드를 선언할 수 있다
 
 
 ```
-delegate int Calculate(int a, int b);
+delegate void Test();
 
 	private void Start()
 	{
-		Calculate calc = (a, b) => a + b;
-		Debug.Log(calc(3,4)); //7	
+		Test test = () =>
+                {
+                    Debug.log(1);
+                    Debug.log(2);
+                    Debug.log(3);
+                }	
 	
 	}
 
