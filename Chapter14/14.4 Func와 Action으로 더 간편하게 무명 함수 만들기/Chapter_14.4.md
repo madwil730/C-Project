@@ -1,20 +1,11 @@
-# 14.3 문 형식의 람다식
-* => 연산자 뒤에 {}로 둘러쌓인 코드를 선언할 수 있다
+# 14.4 Func와 Action으로 더 간편하게 무명 함수 만들기
+* Func 와 Action 대리자를 통해 더 간편하게 무명함수를 만들 수 있다
+
+### Func 대리자
+* Func 대리자는 결과를 반환하는 메소드를 참조한다
+
+### Action 대리자
+* Action 대리자는 결과를 반환하지 않는 메소드를 참조한다
 
 
-```
-delegate void Test();
 
-	private void Start()
-	{
-		Test test = () =>
-                {
-                    Debug.log(1);
-                    Debug.log(2);
-                    Debug.log(3);
-                }	
-	
-	}
-
-
-```
