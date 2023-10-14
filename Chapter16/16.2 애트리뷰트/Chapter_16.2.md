@@ -18,3 +18,4 @@
 
 ### 내가 만드는 애트리뷰트 
 * System.Attribute 클래스를 상속받아 자신이 원하는 애트리 뷰트를 생성할 수 있다
+* System.AttributeUsage를 선언하여 애트리뷰트의 설정을 지정할 수 있다
