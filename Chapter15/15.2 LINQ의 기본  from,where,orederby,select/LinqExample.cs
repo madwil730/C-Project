@@ -18,7 +18,6 @@ public class LinqExample : MonoBehaviour
         Profile[] arrProfile =
         {
             new Profile(){ Name = "aaa", Height =186},
-
             new Profile(){ Name = "bbb", Height =158},
             new Profile(){ Name = "ccc", Height =172},
             new Profile(){ Name = "ddd", Height =178},
@@ -35,7 +34,7 @@ public class LinqExample : MonoBehaviour
                        };
 
         foreach (var profile in profiles)
-            Debug.Log(profile.Name+ " " + profile.Height); // bbb,eee,ccc ³ª¿È
+            Debug.Log(profile.Name+ " " + profile.Height); // bbb,eee,ccc Å‚ÅžÅ¼ÄŒ
         
     }
 
