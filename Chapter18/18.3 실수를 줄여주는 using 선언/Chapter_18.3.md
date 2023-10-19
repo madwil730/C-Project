@@ -6,9 +6,10 @@
 
 using (Stream AStream = new FileStream("a.dat", FileMode.Create))
 {
-		    byte[] wBytes = BitConverter.GetBytes(someValue);
-			outStream.Write(wBytes, 0, wBytes.Length); // 변환한  byte 배열을 파일 스트림을 통해 파일에 기록
-}// 코드 블록이 끝나면서 AStream.Dispose()호출
+    byte[] wBytes = BitConverter.GetBytes(someValue);
+    outStream.Write(wBytes, 0, wBytes.Length); // 변환한  byte 배열을 파일 스트림을 통해 파일에 기록
+}
+// 코드 블록이 끝나면서 AStream.Dispose()호출
 
 
 ```
