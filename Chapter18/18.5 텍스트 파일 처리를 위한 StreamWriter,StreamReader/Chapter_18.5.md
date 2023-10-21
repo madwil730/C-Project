@@ -1,7 +1,5 @@
-# 18.4 이진 데이터 처리를 위한 BinarayWriter,BinaryReader
-* BinarayWriter는 스트림에 이진 데이터를 기록하기 위한 목적으로 사용한다
-* BinaryReader 스트림에 이진 데이터를 읽기 위한 목적으로 사용한다
-* BinarayWriter,BinaryReader 를 통해 바이트 형 변환 없이 파일을 읽고 쓸 수 있다
+# 18.5 텍스트 파일 처리를 위한 StreamWriter,StreamReader
+* StreamWriter,StreamReader 를 통해 쉽게 텍스트 파일을 읽을 수 있다
 
 ```
 예시)
