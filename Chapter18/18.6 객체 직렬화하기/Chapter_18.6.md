@@ -1,26 +1,4 @@
-# 18.4 이진 데이터 처리를 위한 BinarayWriter,BinaryReader
-* BinarayWriter는 스트림에 이진 데이터를 기록하기 위한 목적으로 사용한다
-* BinaryReader 스트림에 이진 데이터를 읽기 위한 목적으로 사용한다
-* BinarayWriter,BinaryReader 를 통해 바이트 형 변환 없이 파일을 읽고 쓸 수 있다
-
-```
-예시)
-void Start()
-{
-    using (BinaryWriter bw = new BinaryWriter(new FileStream("a.dat", FileMode.Create)))
-   {
-      bw.Write(int.MaxValue);
-      bw.Write("Good moring");
-      bw.Write(uint.MaxValue);
-   }
-
-   using (BinaryReader br = new BinaryReader(new FileStream("a.dat", FileMode.Open)))
-   {
-      br.ReadInt32();
-      br.ReadString();
-      br.ReadUInt32();
-   }
-}
-
-
-```
+# 18.6 객체 직렬화하기
+* c#은 복합 데이터 형식을 쉽게 스트림에 쓰고 읽기 할 수 있게 직렬화 매커니즘을 제공한다
+* 직렬화 : 객체의 상태(객체의 필드에 저장된 값)을 메모리나 영구 저장 장치에 저장이 가능한 0과1의 순서로 바꾸는 것
+* [Serializable] 애트리뷰트로 쉽게 클래스나 구조체를 직렬화 할 수 있다
