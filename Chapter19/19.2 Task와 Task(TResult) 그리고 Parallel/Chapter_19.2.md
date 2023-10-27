@@ -7,3 +7,26 @@
 ### 비동기 실행결과를 주는 Task<TResult> 클래스
 * Task<TResult>는  코드의 비동기 실행 결과를 손쉽게 취합할 수 있도록 도와준다
 * Action 대리자를 받는 대신 Func 대리자를 받는다
+```
+예시)
+        var myTask = Task<List<int>>.Run(() =>
+        {
+            Thread.Sleep(1000);
+
+            List<int> list = new List<int>();
+            list.Add(3);
+            list.Add(4);
+            list.Add(5);
+
+            return list;    // TResilt 형식의 결과를 반환
+        });
+
+        var myList = new List<int>();
+        myList.Add(0);
+        myList.Add(1);
+        myList.Add(2);
+
+        myTask.Wait();
+        myList.AddRange(myTask.Result.ToArray()); // myList의 요소는 0,1,2,3,4,5 가 된다 
+
+```
